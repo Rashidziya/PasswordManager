@@ -101,7 +101,7 @@ const Manager = () => {
         <div className="absolute bottom-0 left-0 right-0 top-0 bg-[radial-gradient(circle_500px_at_50%_200px,#C9EBFF,transparent)]"></div>
       </div>
 
-      <div className="mycontainer ">
+      <div className="  px-6 py-4 mx-auto max-w-screen-sm md:mycontainer ">
         <h1 className="text-center  text-4xl font-bold">
           <span className="text-blue-500">&lt;</span>
           Pass
@@ -120,7 +120,7 @@ const Manager = () => {
             value={form.site}
             onChange={handleChange}
           />
-          <div className="grid grid-cols-3 gap-5">
+          <div className="flex flex-col gap-7 p-4 md:grid grid-cols-3 gap-5">
             <input
               className="rounded-full border-2 col-span-2 border-blue-500 px-4 py-1 text-black"
               placeholder="Enter Username"
@@ -167,7 +167,8 @@ const Manager = () => {
         <h2 className="font-bold text-xl py-4">Your Passwords</h2>
         {passwordArray.length === 0 && <div>No Passwords to show</div>}
         {passwordArray.length != 0 && (
-          <table className="table-auto w-full rounded-md overflow-hidden">
+          <div className="overflow-x-auto ">
+          <table className="w-full max-w-full md:table-auto w-full rounded-md overflow-hidden">
             <thead className="bg-blue-500 text-white">
               <tr>
                 <th className="px-4 py-2">Site</th>
@@ -239,6 +240,7 @@ const Manager = () => {
               })}
             </tbody>
           </table>
+          </div>
         )}
       </div>
     </>
