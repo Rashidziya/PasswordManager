@@ -123,7 +123,7 @@ const Manager = () => {
           <div className="flex flex-col gap-7 p-4 md:grid grid-cols-3 gap-5">
             <input
               className="rounded-full border-2 col-span-2 border-blue-500 px-4 py-1 text-black"
-              placeholder="Enter Username"
+              placeholder="Enter Username/Email"
               type="text"
               name="username"
               value={form.username}
