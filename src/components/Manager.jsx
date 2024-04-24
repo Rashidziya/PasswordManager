@@ -181,7 +181,7 @@ const Manager = () => {
               {passwordArray.map((item) => {
                 return (
                   <tr key={item.index}>
-                    <td className="py-2 text-center ">
+                    <td className="py-2 px-2 text-center ">
                       <div className="flex justify-center items-center gap-2 ">
                         <a href={item.site} target="_blank">
                           <span>{item.site}</span>
@@ -196,7 +196,7 @@ const Manager = () => {
                         />
                       </div>
                     </td>
-                    <td className=" py-2 text-center ">
+                    <td className=" py-2 px-2 text-center ">
                       <div className="flex justify-center items-center gap-2 ">
                         <span>{item.username}</span>
                         <img
@@ -209,7 +209,7 @@ const Manager = () => {
                         />
                       </div>
                     </td>
-                    <td className="py-2 text-center ">
+                    <td className="py-2 px-2 text-center ">
                       <div className="flex justify-center items-center gap-2 ">
                         <span><MaskedPassword password={item.password}/></span>
                         <img
@@ -223,7 +223,7 @@ const Manager = () => {
                       </div>
                     </td>
 
-                    <td className="py-2 text-center ">
+                    <td className="py-2 px-2 text-center ">
                       <div className="flex justify-center items-center gap-4 cursor-pointer">
 
                         <span onClick={()=>handleEdit(item.id)}>
